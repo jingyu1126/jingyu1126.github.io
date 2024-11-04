@@ -55,15 +55,6 @@ nav a {
 
 /* 技能頁面樣式 */
 .skills {
-    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
-}
-
-.skills main {
-    background: #ffffff;
-}
-
-/* 聯絡我頁面樣式 */
-.contact {
     background: linear-gradient(135deg, #8e44ad, #732d91);
 }
 
