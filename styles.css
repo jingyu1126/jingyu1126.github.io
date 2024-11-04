@@ -11,15 +11,19 @@ header {
     text-align: center;
 }
 
-nav {
-    margin: 20px 0;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
-    margin: 0 15px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 /* 首頁樣式 */
