@@ -149,6 +149,51 @@ nav a:hover {
     padding: 30px;
 }
 
+/* Skill Cards Styling */
+.skills-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Skill Icons */
+.skill-icon {
+    width: 50px;
+    height: 50px;
+}
+
 /* 通用樣式 */
 main {
     padding: 20px;
