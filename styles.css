@@ -96,15 +96,23 @@ nav a:hover {
     transition: width 0.5s ease;
 }
 
-/* 證書卡片樣式 */
+/* 證書部分容器，兩兩並排 */
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap; /* 讓卡片能夠自動換行 */
+    justify-content: space-between; /* 讓卡片有間隔 */
+    gap: 20px; /* 設定間隔 */
+    margin-top: 20px;
+}
+
+/* 每張證書的卡片樣式 */
 .achievement-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+    width: calc(50% - 10px); /* 每兩個卡片並排 */
+    box-sizing: border-box;
 }
 
 .achievement-card img {
@@ -129,40 +137,6 @@ nav a:hover {
     font-size: 16px;
     color: #666;
 }
-
-/* 時間軸樣式 */
-.timeline {
-    position: relative;
-    padding-left: 20px;
-    margin-left: 20px;
-    border-left: 2px solid #ccc;
-}
-
-.timeline-item {
-    margin-bottom: 20px;
-}
-
-.timeline-item h4 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.timeline-item p {
-    font-size: 14px;
-    color: #666;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #4caf50;
-    border-radius: 50%;
-}
-
 
 /* 技能頁面樣式 */
 .skills {
