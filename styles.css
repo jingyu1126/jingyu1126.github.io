@@ -152,15 +152,16 @@ nav a:hover {
 /* Skill Cards Styling */
 .skills-cards {
     display: flex;
-    gap: 20px;
-    justify-content: space-evenly; /* 卡片均勻分布 */
-    flex-wrap: wrap; /* 當螢幕空間不足時自動換行 */
+    gap: 20px; /* 卡片間隔 */
+    justify-content: flex-start; /* 卡片對齊左側 */
+    flex-wrap: nowrap; /* 保持在一行內 */
     margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .card {
     background: #fff;
-    width: 150px; /* 讓卡片變瘦一些 */
+    width: 120px; /* 進一步縮小卡片寬度 */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -174,18 +175,18 @@ nav a:hover {
 }
 
 .card img {
-    width: 50px; /* 設置圖標寬度 */
-    height: 50px; /* 設置圖標高度 */
+    width: 60px; /* 增加圖片寬度 */
+    height: 60px; /* 增加圖片高度 */
     object-fit: contain; /* 保持圖片比例 */
 }
 
 .card h4 {
-    font-size: 16px; /* 讓標題變小，保持整體一致性 */
+    font-size: 14px; /* 文字大小調小，適應瘦小的卡片 */
     margin-top: 10px;
 }
 
 .card p {
-    font-size: 12px; /* 縮小文字大小，適應卡片尺寸 */
+    font-size: 12px; /* 調整文字大小，讓卡片看起來不過於擁擠 */
     color: #555;
     margin-top: 10px;
 }
