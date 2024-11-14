@@ -125,21 +125,21 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);  /* 增加頁腳的陰影 */
 }
 
-/* 圖片樣式 */
+/* 圖片並排顯示 */
 .image-gallery {
-    display: flex;
-    justify-content: center; /* 圖片居中 */
-    gap: 20px; /* 增加圖片之間的間距 */
+    display: flex; /* 使用 Flexbox 排列圖片 */
+    justify-content: space-between; /* 使圖片之間有空隙 */
+    gap: 20px; /* 設置圖片之間的間隔 */
+    margin-top: 20px; /* 增加圖片區塊與其他內容的間距 */
 }
 
 .image-gallery img {
-    width: 45%;  /* 增大圖片 */
-    max-width: 500px; /* 設定圖片的最大寬度，防止圖片過大 */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    width: 48%; /* 設定圖片的寬度為容器的 48% */
+    border-radius: 8px; /* 圓角效果 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 增加陰影效果 */
+    transition: transform 0.3s ease; /* 圖片懸停時放大 */
 }
 
 .image-gallery img:hover {
-    transform: scale(1.05); /* 圖片放大效果 */
+    transform: scale(1.05); /* 懸停時圖片放大 */
 }
