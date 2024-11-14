@@ -129,11 +129,12 @@ nav a:hover {
 }
 
 .achievement-card h4 {
+    margin-bottom: 10px; /* 讓 h4 和 p 之間有些間隔 */
     font-size: 20px;
-    margin: 0;
 }
 
 .achievement-card p {
+    margin-top: 0;
     font-size: 16px;
     color: #666;
 }
