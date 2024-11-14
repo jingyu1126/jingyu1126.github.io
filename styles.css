@@ -47,7 +47,7 @@ nav a:hover {
     background: #f9f9f9;
     padding: 30px;
 }
-/* 使 p 標籤中的文字置中 */
+
 .home main p {
     text-align: center;  /* 文字置中 */
     font-size: 1.2em;     /* 可以稍微增大字型，使其更突出 */
@@ -62,6 +62,12 @@ nav a:hover {
 .experience main {
     background: #ffffff;
     padding: 30px;
+}
+
+.experience main p {
+    text-align: center;  
+    font-size: 1.2em;     
+    margin: 10px 0; 
 }
 
 /* 成就頁面樣式 */
