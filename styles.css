@@ -153,9 +153,11 @@ nav a:hover {
 .skills-cards {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between; /* 使卡片在一行中均勻分布 */
+    flex-wrap: nowrap; /* 禁止換行，讓卡片始終在一行 */
+    overflow-x: auto; /* 當卡片超出螢幕寬度時，可以橫向滾動 */
     margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .card {
@@ -166,6 +168,7 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    flex-shrink: 0; /* 不讓卡片縮小 */
 }
 
 .card:hover {
