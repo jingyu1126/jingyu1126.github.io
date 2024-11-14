@@ -13,6 +13,38 @@ header {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* 標題文字陰影 */
 }
 
+nav {
+    text-align: center; /* 使導航欄居中 */
+    margin-top: 10px; /* 增加與標題的間距 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex; /* 使用flexbox使導航項目水平排列 */
+    justify-content: center; /* 使按鈕居中 */
+    gap: 20px; /* 增加按鈕之間的間距 */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;  /* 按鈕字體增大 */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* 增加過渡效果 */
+    display: inline-block; /* 讓按鈕正確顯示 */
+}
+
+nav a:hover {
+    background-color: #333333;
+    transform: scale(1.1);  /* 按鈕放大效果 */
+}
+
 /* 首頁樣式 */
 .home {
     background: linear-gradient(135deg, #6a82fb, #fc5c7d);
@@ -64,7 +96,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
-    text-align: center; /* 使內容居中 */
+    text-align: center;
 }
 
 h2 {
@@ -105,8 +137,8 @@ footer {
 }
 
 .image-gallery img {
-    width: 45%;  /* 增大圖片 */
-    max-width: 500px; /* 設定圖片的最大寬度，防止圖片過大 */
+    width: 45%;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
