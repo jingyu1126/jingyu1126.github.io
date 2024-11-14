@@ -195,8 +195,15 @@ footer {
     justify-content: space-between; /* 使圖片之間有空隙 */
     gap: 20px; /* 設置圖片之間的間隔 */
     margin-top: 20px; /* 增加圖片區塊與其他內容的間距 */
+    flex-wrap: wrap; /* 確保圖片在不同螢幕大小下換行 */
 }
 
+/* 當有一張圖片時，置中顯示 */
+.image-gallery.single-image {
+    justify-content: center; /* 圖片居中顯示 */
+}
+
+/* 當有兩張圖片並排顯示 */
 .image-gallery img {
     width: 48%; /* 設定圖片的寬度為容器的 48% */
     border-radius: 8px; /* 圓角效果 */
@@ -204,6 +211,8 @@ footer {
     transition: transform 0.3s ease; /* 圖片懸停時放大 */
 }
 
+/* 圖片懸停效果 */
 .image-gallery img:hover {
     transform: scale(1.05); /* 懸停時圖片放大 */
 }
+
