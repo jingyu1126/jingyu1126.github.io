@@ -161,7 +161,7 @@ nav a:hover {
 
 .card {
     background: #fff;
-    width: 100px; /* 進一步縮小卡片寬度 */
+    width: 80px; /* 進一步縮小卡片寬度 */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
