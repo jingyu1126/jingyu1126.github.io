@@ -153,50 +153,41 @@ nav a:hover {
 .skills-cards {
     display: flex;
     gap: 20px;
-    justify-content: space-between; /* 使卡片在一行中均勻分布 */
-    flex-wrap: nowrap; /* 禁止換行，讓卡片始終在一行 */
-    overflow-x: auto; /* 當卡片超出螢幕寬度時，可以橫向滾動 */
+    justify-content: space-evenly; /* 卡片均勻分布 */
+    flex-wrap: wrap; /* 當螢幕空間不足時自動換行 */
     margin-top: 30px;
-    padding-bottom: 10px;
 }
 
 .card {
     background: #fff;
-    width: 200px;
-    padding: 20px;
+    width: 150px; /* 讓卡片變瘦一些 */
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* 不讓卡片縮小 */
+    flex-shrink: 0; /* 防止卡片縮小 */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* 懸停效果 */
 }
 
 .card img {
-    width: 50px; /* 設置圖片寬度 */
-    height: 50px; /* 設置圖片高度 */
-    object-fit: contain; /* 確保圖片比例不變且完全顯示 */
+    width: 50px; /* 設置圖標寬度 */
+    height: 50px; /* 設置圖標高度 */
+    object-fit: contain; /* 保持圖片比例 */
 }
 
 .card h4 {
-    font-size: 18px;
+    font-size: 16px; /* 讓標題變小，保持整體一致性 */
     margin-top: 10px;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 12px; /* 縮小文字大小，適應卡片尺寸 */
     color: #555;
     margin-top: 10px;
-}
-
-/* Skill Icons */
-.skill-icon {
-    width: 50px; /* 設置每個圖標的寬度 */
-    height: 50px; /* 設置每個圖標的高度 */
-    object-fit: contain; /* 保持圖片比例並確保不會被拉伸或剪裁 */
 }
 
 /* 通用樣式 */
