@@ -9,40 +9,33 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 2.5em;  /* 標題字型增大 */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* 標題文字陰影 */
-}
-
-nav {
-    text-align: center; /* 使導航欄居中 */
-    margin-top: 10px; /* 增加與標題的間距 */
+    font-size: 2em;  /* 調整標題字型大小 */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* 增加標題文字陰影 */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: inline-flex; /* 使用flexbox使導航項目水平排列 */
-    justify-content: center; /* 使按鈕居中 */
-    gap: 20px; /* 增加按鈕之間的間距 */
+    text-align: center;  /* 讓導航項目置中 */
 }
 
 nav ul li {
     display: inline-block;
+    margin: 0 18px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.1em;  /* 按鈕字體增大 */
+    font-size: 1.1em;  /* 增加字體大小 */
     padding: 8px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;  /* 增加過渡效果 */
-    display: inline-block; /* 讓按鈕正確顯示 */
 }
 
 nav a:hover {
     background-color: #333333;
-    transform: scale(1.1);  /* 按鈕放大效果 */
+    transform: scale(1.1);  /* 當懸停時，按鈕略微放大 */
 }
 
 /* 首頁樣式 */
@@ -53,12 +46,6 @@ nav a:hover {
 .home main {
     background: #f9f9f9;
     padding: 30px;
-    max-width: 800px;
-    margin: 0 auto; /* 使主區域居中 */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* 使首頁內容居中 */
-    overflow: hidden; /* 避免圖片過大導致頁面太長 */
 }
 
 /* 學習經歷頁面樣式 */
@@ -68,6 +55,7 @@ nav a:hover {
 
 .experience main {
     background: #ffffff;
+    padding: 30px;
 }
 
 /* 成就頁面樣式 */
@@ -77,6 +65,7 @@ nav a:hover {
 
 .achievements main {
     background: #ffffff;
+    padding: 30px;
 }
 
 /* 技能頁面樣式 */
@@ -86,6 +75,7 @@ nav a:hover {
 
 .skills main {
     background: #ffffff;
+    padding: 30px;
 }
 
 /* 通用樣式 */
@@ -94,26 +84,26 @@ main {
     max-width: 800px;
     margin: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);  /* 增加更強的陰影 */
+    background-color: white;  /* 確保背景是白色 */
 }
 
 h2 {
     color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2em;  /* 調整標題字型大小 */
+    margin-bottom: 20px;  /* 增加標題與正文間的距離 */
+    text-align: center;  /* 使標題居中 */
 }
 
 ul {
-    list-style-type: disc;
-    margin: 10px 0 20px 20px;
+    list-style-type: disc; /* 項目符號樣式 */
+    margin: 10px 0 20px 20px; /* 調整邊距 */
     padding: 0;
 }
 
 li {
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 5px 0; /* 項目之間的間距 */
+    font-size: 16px; /* 字體大小 */
 }
 
 /* 頁腳 */
@@ -126,7 +116,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 1em;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);  /* 增加頁腳的陰影 */
 }
 
 /* 圖片樣式 */
@@ -137,8 +127,8 @@ footer {
 }
 
 .image-gallery img {
-    width: 45%;
-    max-width: 500px;
+    width: 45%;  /* 增大圖片 */
+    max-width: 500px; /* 設定圖片的最大寬度，防止圖片過大 */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
